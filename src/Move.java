@@ -1,17 +1,17 @@
 
 public class Move {
 	
-	public static boolean definesMove(int row1, int col1, int row2, int col2, int row, int columns) {
-		
-		return true;
-	}
-
 	private int row1;
 	private int row2;
 	private int col1;
 	private int col2;
 	private int rows;
 	private int columns;
+	
+	public static boolean definesMove(int row1, int col1, int row2, int col2, int row, int columns) {
+		
+		return true;
+	}
 	
 	public Move(int row1, int col1, int row2, int col2, int rows, int columns) {
 		this.row1 = row1;
@@ -53,10 +53,10 @@ public class Move {
 	}
 	
 	public int rows() {
-		return this.row1 + this.row2 - 1;
+		return this.rows;
 	}
 	
 	public int columns() {
-		return this.col1 + this.col2 - 1;
+		return this.columns;
 	}
 }
